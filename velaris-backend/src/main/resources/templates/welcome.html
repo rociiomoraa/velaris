@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenido a Velaris</title>
+</head>
+<body style="margin:0;padding:0;background:#FAFAF8;font-family:'Segoe UI',Arial,sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="center" style="padding:40px 20px;">
+            <table width="600" cellpadding="0" cellspacing="0"
+                   style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
+
+                <!-- Cabecera -->
+                <tr>
+                    <td style="background:linear-gradient(135deg,#0BAF8A,#E91E8C);padding:48px 40px;text-align:center;">
+                        <div style="font-size:48px;margin-bottom:16px;">🌺</div>
+                        <h1 style="color:#fff;margin:0;font-size:30px;font-weight:800;">¡Aloha, <span th:text="${name}">Viajero</span>!</h1>
+                        <p style="color:rgba(255,255,255,0.9);margin:12px 0 0;font-size:16px;">
+                            Bienvenido/a a la familia Velaris
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Contenido -->
+                <tr>
+                    <td style="padding:36px 40px;">
+                        <p style="color:#1A1A2E;font-size:16px;line-height:1.7;margin:0 0 24px;">
+                            Tu cuenta ha sido creada con éxito. A partir de ahora puedes explorar
+                            destinos increíbles y reservar el viaje de tus sueños. ¿Qué te espera en Velaris?
+                        </p>
+
+                        <table width="100%" cellpadding="0" cellspacing="0"
+                               style="background:#E0F7F2;border-radius:12px;padding:4px;">
+                            <tr><td style="padding:14px 20px;border-bottom:1px solid #b2f0e8;">
+                                🏖️ <strong>Explorar destinos</strong> — Más de 12 destinos únicos a tu alcance
+                            </td></tr>
+                            <tr><td style="padding:14px 20px;border-bottom:1px solid #b2f0e8;">
+                                🌺 <strong>Vera, tu asistente IA</strong> — Recomendaciones personalizadas 24/7
+                            </td></tr>
+                            <tr><td style="padding:14px 20px;border-bottom:1px solid #b2f0e8;">
+                                ❤️ <strong>Favoritos</strong> — Guarda los viajes que te enamoran
+                            </td></tr>
+                            <tr><td style="padding:14px 20px;">
+                                ⭐ <strong>Reseñas</strong> — Comparte tu experiencia con la comunidad
+                            </td></tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- Botón CTA -->
+                <tr>
+                    <td style="padding:0 40px 36px;text-align:center;">
+                        <a href="http://localhost:5173"
+                           style="display:inline-block;background:linear-gradient(135deg,#E91E8C,#00C9B1);color:#fff;text-decoration:none;padding:16px 40px;border-radius:50px;font-weight:700;font-size:16px;">
+                            Explorar viajes ✈️
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td style="background:#FAFAF8;padding:24px 40px;text-align:center;border-top:1px solid #EDE8E3;">
+                        <p style="color:#6B7280;font-size:13px;margin:0;">
+                            Mahalo por unirte a <strong style="color:#E91E8C;">Velaris</strong> 🌺<br>
+                            El paraíso te está esperando.
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

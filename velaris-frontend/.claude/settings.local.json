@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\rocio\\\\Desktop\\\\velaris\\\\velaris-frontend\" -Recurse -Force)",
+      "Bash(Select-Object FullName)",
+      "Bash(Sort-Object FullName)",
+      "Bash(Out-String -Width 300)",
+      "PowerShell(cd \"c:\\\\Users\\\\rocio\\\\Desktop\\\\velaris\\\\velaris-frontend\"; Get-ChildItem -Directory | Where-Object {$_.Name -ne 'node_modules'})",
+      "PowerShell(cd \"c:\\\\Users\\\\rocio\\\\Desktop\\\\velaris\\\\velaris-frontend\\\\src\"; Get-ChildItem -Recurse -Directory | ForEach-Object {$_.FullName.Replace\\(\"c:\\\\Users\\\\rocio\\\\Desktop\\\\velaris\\\\velaris-frontend\\\\src\", \"src\"\\)})",
+      "PowerShell(cd \"c:\\\\Users\\\\rocio\\\\Desktop\\\\velaris\\\\velaris-frontend\\\\src\"; Get-ChildItem -Recurse -File | Where-Object {$_.Extension -in '.tsx', '.ts', '.jsx', '.js', '.json'} | ForEach-Object {$_.FullName.Replace\\(\"c:\\\\Users\\\\rocio\\\\Desktop\\\\velaris\\\\velaris-frontend\\\\\", \"\"\\)} | Sort-Object)"
+    ]
+  }
+}

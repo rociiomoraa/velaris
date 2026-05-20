@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cancelación de reserva</title>
+</head>
+<body style="margin:0;padding:0;background:#FAFAF8;font-family:'Segoe UI',Arial,sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="center" style="padding:40px 20px;">
+            <table width="600" cellpadding="0" cellspacing="0"
+                   style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.08);">
+
+                <!-- Cabecera -->
+                <tr>
+                    <td style="background:#B5156A;padding:40px;text-align:center;">
+                        <div style="font-size:36px;margin-bottom:12px;">🌺</div>
+                        <h1 style="color:#fff;margin:0;font-size:24px;font-weight:700;">Reserva Cancelada</h1>
+                        <p style="color:rgba(255,255,255,0.85);margin:8px 0 0;font-size:14px;">
+                            Hemos procesado la cancelación de tu reserva
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Contenido -->
+                <tr>
+                    <td style="padding:32px 40px;">
+                        <p style="color:#1A1A2E;font-size:16px;margin:0 0 16px;">
+                            Hola, <strong th:text="${userName}">Usuario</strong>
+                        </p>
+                        <p style="color:#6B7280;font-size:15px;line-height:1.7;margin:0 0 24px;">
+                            Tu reserva ha sido cancelada correctamente. Si fue un error o cambias de opinión,
+                            ¡siempre puedes volver a reservar!
+                        </p>
+
+                        <table width="100%" cellpadding="0" cellspacing="0"
+                               style="background:#FAFAF8;border-radius:12px;border:1px solid #EDE8E3;">
+                            <tr>
+                                <td style="padding:20px 24px;">
+                                    <p style="color:#6B7280;font-size:12px;text-transform:uppercase;letter-spacing:1px;margin:0 0 4px;">Viaje cancelado</p>
+                                    <p style="color:#1A1A2E;font-size:18px;font-weight:700;margin:0 0 12px;" th:text="${tripTitle}">Nombre del viaje</p>
+                                    <p style="color:#6B7280;font-size:13px;margin:0;">
+                                        Nº de reserva: <strong style="color:#1A1A2E;" th:text="'#' + ${bookingId}">#0</strong>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+                <!-- Botón CTA -->
+                <tr>
+                    <td style="padding:0 40px 36px;text-align:center;">
+                        <a href="http://localhost:5173/trips"
+                           style="display:inline-block;background:linear-gradient(135deg,#E91E8C,#00C9B1);color:#fff;text-decoration:none;padding:14px 36px;border-radius:50px;font-weight:700;font-size:15px;">
+                            Ver otros viajes ✈️
+                        </a>
+                    </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td style="background:#FAFAF8;padding:24px 40px;text-align:center;border-top:1px solid #EDE8E3;">
+                        <p style="color:#6B7280;font-size:13px;margin:0;">
+                            <strong style="color:#E91E8C;">Velaris</strong> 🌺 — El mundo te espera
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

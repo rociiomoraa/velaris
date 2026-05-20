@@ -1,0 +1,60 @@
+{
+  "name": "Velaris — Viajes, Vuelos y Escapadas",
+  "short_name": "Velaris",
+  "description": "Tu plataforma de viajes inteligente con asistente IA Vera",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAFAF8",
+  "theme_color": "#1C4E78",
+  "orientation": "portrait-primary",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+  "categories": ["travel", "lifestyle"],
+  "shortcuts": [
+    {
+      "name": "Destinos",
+      "short_name": "Destinos",
+      "url": "/trips",
+      "description": "Explorar destinos disponibles"
+    },
+    {
+      "name": "Vuelos",
+      "short_name": "Vuelos",
+      "url": "/flights",
+      "description": "Buscar vuelos"
+    },
+    {
+      "name": "Escapadas",
+      "short_name": "Escapadas",
+      "url": "/escapadas",
+      "description": "Escapadas de fin de semana"
+    },
+    {
+      "name": "Vera IA",
+      "short_name": "Vera",
+      "url": "/recommendations",
+      "description": "Recomendaciones personalizadas con IA"
+    }
+  ]
+}
